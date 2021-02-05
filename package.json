@@ -1,0 +1,29 @@
+{
+  "name": "gatsby-bi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gatsby site + Bootstrap Italia starter",
+  "author": "emilioSp",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap-italia": "^1.4.3",
+    "gatsby": "^2.26.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "recharts": "^2.0.6"
+  },
+  "devDependencies": {
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.20",
+    "gh-pages": "^3.1.0"
+  }
+}
