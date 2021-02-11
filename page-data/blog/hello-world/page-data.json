@@ -1,0 +1,1 @@
+{"componentChunkName":"component---templates-post-template-js","path":"/blog/hello-world","result":{"data":{"markdownRemark":{"html":"<h1>Hello World!</h1>\n<p>Helloooooo</p>","frontmatter":{"date":"May 04, 2019","slug":"/blog/hello-world","title":"Hello world"}}},"pageContext":{"slug":"/blog/hello-world"}},"staticQueryHashes":[]}

@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{k6Ga:function(e,t,n){"use strict";n.r(t);var c=n("q1tI");t.default=function(){var e=Object(c.useState)({}),t=e[0],n=e[1];return Object(c.useEffect)((function(){fetch("https://jsonplaceholder.typicode.com/todos/1").then((function(e){return e.json()})).then((function(e){return n(e)}))}),[]),c.createElement(c.Fragment,null,c.createElement("div",null,"La pagina del dipartimento"),c.createElement("pre",null,JSON.stringify(t)))}}}]);
-//# sourceMappingURL=component---src-pages-dipartimento-js-aaced59a47192f0047b1.js.map
