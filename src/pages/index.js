@@ -1,16 +1,12 @@
 import * as React from "react"
-import { Header } from '../components/Header.js';
 import { Main } from '../components/Main.js';
-import { Footer } from '../components/Footer.js';
+import { Layout } from '../components/Layout.js';
 
 const IndexPage = () => {
   return (
-    <main>
-      <title>Home Page</title>
-      <Header />
+    <Layout>
       <Main />
-      <Footer />
-    </main>
+    </Layout>
   )
 }
 
