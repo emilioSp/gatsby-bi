@@ -1,5 +1,5 @@
 ---
-slug: "/blog/hello-world"
+path: "/blog/hello-world"
 date: "2019-05-04"
 title: "Hello world"
 ---

@@ -23,14 +23,18 @@ export const Header = () => {
           <div className="container">
             <div className="row">
               <div className="it-header-center-content-wrapper px-2 px-sm-0">
-                <div className="it-brand-wrapper pr-0 pr-md-5"><a href="/"><img
-                  src="https://innovazione.gov.it/images/logo-repubblica-italiana-56a773ac.svg" alt="Logo Repubblica Italiana"
-                  style={{maxHeight: '72px'}} className="icon" /><img src="https://innovazione.gov.it/images/logo-mid-white-6d6c98f9.svg"
-                                                                  alt="Logo Ministro Innovazione"
-                                                                  style={{width: '120px', maxHeight: '72px'}}
-                                                                  className="icon" />
-                                                                  PAGINA DI ESEMPIO
-                  </a></div>
+                <div className="it-brand-wrapper pr-0 pr-md-5">
+                  <Link to="/" className="nav-link font-weight-semibold">
+                    <img
+                      src="https://innovazione.gov.it/images/logo-repubblica-italiana-56a773ac.svg" alt="Logo Repubblica Italiana"
+                      style={{maxHeight: '72px'}} className="icon" />
+                    <img src="https://innovazione.gov.it/images/logo-mid-white-6d6c98f9.svg"
+                         alt="Logo Ministro Innovazione"
+                         style={{width: '120px', maxHeight: '72px'}}
+                         className="icon" />
+                    PAGINA DI ESEMPIO
+                  </Link>
+                </div>
                 <div className="it-right-zone">
                   <div className="it-socials d-none d-md-flex text-nowrap"><span>Seguici su</span>
                     <div className="ml-3">
@@ -101,9 +105,8 @@ export const Header = () => {
                       <li className="nav-item">
                         <Link to="/dipartimento/" className="nav-link font-weight-semibold">Dipartimento</Link>
                       </li>
-                      <li className="nav-item"><a href="/progetti/"
-                                                  className="nav-link font-weight-semibold">Progetti</a></li>
-                      <li className="nav-item"><a href="/notizie/" className="nav-link font-weight-semibold">Notizie</a>
+                      <li className="nav-item">
+                        <Link to="/optimized_image/" className="nav-link font-weight-semibold">Ottimizzazione immagini</Link>
                       </li>
                     </ul>
                     <div className="it-socials d-flex text-nowrap ml-4 pt-4 d-lg-none"><span className="text-white">Seguici su</span>

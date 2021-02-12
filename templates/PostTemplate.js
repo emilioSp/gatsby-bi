@@ -1,30 +1,28 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Layout } from '../src/components/Layout.js';
 
 export const PostTemplate = ({ data }) => {
-  const { markdownRemark } = data // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark
+  const { markdownRemark } = data; // data.markdownRemark holds our post data
+  const { frontmatter, html } = markdownRemark;
+  const date = new Date(frontmatter.date);
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
+    <Layout>
         <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
-    </div>
+        <hr />
+        <h2>{date.toLocaleDateString()}</h2>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+    </Layout>
   )
 }
 
 export const pageQuery = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+  query($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        slug
+        date
+        path
         title
       }
     }

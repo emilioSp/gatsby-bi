@@ -1,11 +1,9 @@
 const axios = require('axios');
+const path = require('path');
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+exports.createPages = async ({ actions: { createPage }, graphql }) => {
 
-  const blogPostTemplate = require.resolve(`./templates/PostTemplate.js`)
-
-  return graphql(`
+  const result = await graphql(`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
@@ -14,26 +12,23 @@ exports.createPages = ({ actions, graphql }) => {
         edges {
           node {
             frontmatter {
-              slug
+              path
             }
           }
         }
       }
     }
-  `).then(result => {
-    if (result.errors) {
-      return Promise.reject(result.errors)
-    }
+  `);
 
-    return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.slug,
-        component: blogPostTemplate,
-        context: {
-          // additional data can be passed via context
-          slug: node.frontmatter.slug,
-        },
-      })
+  if (result.errors) {
+    console.error(result.errors);
+    throw new Error(result.errors);
+  }
+
+  return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: path.resolve(__dirname, 'templates/PostTemplate.js'),
     })
   })
 }

@@ -20,7 +20,9 @@ export const Layout = ({ children }) => {
       <main>
         <title>{data.site.siteMetadata.title}</title>
         <Header />
-        {children}
+          <div className="container">
+            {children}
+          </div>
         <Footer />
       </main>
     </>
