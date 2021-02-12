@@ -1,15 +1,34 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 
 export const Main = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              title
+              path
+              date
+              show_in_home
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const frontMatter = data.allMarkdownRemark.edges.map(n => n.node.frontmatter);
   return (
     <div className="container pt-5">
-      <ul>
-        <Link to="/blog/hello-world/">Hello world</Link>
-      </ul>
-      <ul>
-        <Link to="/blog/hello-universe/">Hello universe</Link>
-      </ul>
+      {
+        frontMatter.filter(f => f.show_in_home).map(f => (
+          <ul key={f.title}>
+            <Link to={f.path}>{f.title}</Link>
+          </ul>
+        ))
+      }
     </div>
   )
 }

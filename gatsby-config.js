@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/gatsby-bi",
+  pathPrefix: process.env.NODE_ENV === 'production' ? "/gatsby-bi" : '',
   siteMetadata: {
     title: "Gatsby + Bootstrap Italia",
     description: "A starter kit for Gatsby + Bootstrap Italia"

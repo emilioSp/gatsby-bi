@@ -11,7 +11,8 @@ const Dipartimento = ({ data, location, pageContext }) => {
       const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
       setJson(response.data);
     }
-    setTimeout(fetch, 3000);
+    const t = setTimeout(fetch, 3000);
+    return () => clearTimeout(t);
   }, [])
   return (
     <Layout>
