@@ -7,7 +7,7 @@ show_in_home: true
 
 ![](mikael-cho-214358.jpg) 
 
-_Photo by [Mikael Cho](https://unsplash.com/@mikael) via [Unsplash](https://unsplash.com/@mikael?photo=_3TDkAttcaM)_
+_Photo by [Mikael Cho](https://unsplash.com/@mikael) via_ [_Unsplash_](https://unsplash.com/@mikael?photo=_3TDkAttcaM)
 
 [gatsby-remark-images][1] is here to take care of all your basic Markdown image issues.
 
