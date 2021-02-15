@@ -4,9 +4,9 @@ import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   post: {
-    textTransform: 'uppercase'
-  }
-})
+    textTransform: 'uppercase',
+  },
+});
 
 export const Main = () => {
   const classes = useStyles();
@@ -25,19 +25,21 @@ export const Main = () => {
         }
       }
     }
-  `)
+  `);
 
-  const frontMatter = data.allMarkdownRemark.edges.map(n => n.node.frontmatter);
+  const frontMatter = data.allMarkdownRemark.edges.map((n) => n.node.frontmatter);
   return (
     <>
       <ul>Notizie scritte in markdown</ul>
-      {
-        frontMatter.filter(f => f.show_in_home).map(f => (
+      {frontMatter
+        .filter((f) => f.show_in_home)
+        .map((f) => (
           <ul key={f.title}>
-            <Link to={f.path} className={classes.post}>{f.title}</Link>
+            <Link to={f.path} className={classes.post}>
+              {f.title}
+            </Link>
           </ul>
-        ))
-      }
+        ))}
     </>
-  )
-}
+  );
+};

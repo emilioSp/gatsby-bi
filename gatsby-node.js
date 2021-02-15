@@ -1,14 +1,10 @@
-const axios = require('axios');
 const path = require('path');
+const axios = require('axios');
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
-
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
         edges {
           node {
             frontmatter {
@@ -29,21 +25,19 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     createPage({
       path: node.frontmatter.path,
       component: path.resolve(__dirname, 'templates/PostTemplate.js'),
-    })
-  })
-}
-
+    });
+  });
+};
 
 const getTodos = async () => {
   const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
-  const data = response.data;
-  return data;
-}
+  return response.data;
+};
 
 exports.onCreatePage = async ({ page, actions }) => {
   if (page.path === '/dipartimento' || page.path === '/dipartimento/') {
-    const { createPage, deletePage } = actions
-    deletePage(page)
+    const { createPage, deletePage } = actions;
+    deletePage(page);
 
     const todos = await getTodos();
 
@@ -53,6 +47,6 @@ exports.onCreatePage = async ({ page, actions }) => {
         ...page.context,
         todos,
       },
-    })
+    });
   }
-}
+};

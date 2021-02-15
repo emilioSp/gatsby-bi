@@ -1,8 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql, useStaticQuery } from 'gatsby';
 import { createUseStyles } from 'react-jss';
-import { Header } from "./Header.js";
+import { Header } from './Header.js';
 import { Footer } from './Footer.js';
 
 const useStyles = createUseStyles({
@@ -10,7 +10,7 @@ const useStyles = createUseStyles({
     composes: 'container',
     marginTop: '40px',
     marginBottom: '40px',
-  }
+  },
 });
 
 export const Layout = ({ children }) => {
@@ -23,15 +23,13 @@ export const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
   return (
     <>
       <main>
         <title>{data.site.siteMetadata.title}</title>
         <Header />
-          <div className={classes.container}>
-            {children}
-          </div>
+        <div className={classes.container}>{children}</div>
         <Footer />
       </main>
     </>
@@ -40,4 +38,4 @@ export const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};

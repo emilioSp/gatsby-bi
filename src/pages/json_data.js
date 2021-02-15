@@ -19,14 +19,14 @@ const JsonData = () => {
   return (
     <Layout>
       <div className="container pt-5">
-        {
-          jsonData.map(data => (
-            <div>{data.id}, {data.name}, {data.type}</div>
-          ))
-        }
+        {jsonData.map((data) => (
+          <div key={data.id}>
+            {data.id}, {data.name}, {data.type}
+          </div>
+        ))}
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 export default JsonData;

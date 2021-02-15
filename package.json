@@ -12,7 +12,8 @@
     "clean": "gatsby clean",
     "deploy": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "lint": "eslint src --ext .js"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -25,6 +26,8 @@
     "recharts": "^2.0.6"
   },
   "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-emiliosp": "^1.0.10",
     "gatsby-plugin-jss": "^2.10.0",
     "gatsby-plugin-sharp": "^2.14.1",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.20",
