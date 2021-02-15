@@ -1,12 +1,12 @@
 module.exports = {
-  pathPrefix: process.env.NODE_ENV === 'production' ? "/gatsby-bi" : '',
+  pathPrefix: process.env.NODE_ENV === 'production' ? '/gatsby-bi' : '',
   siteMetadata: {
-    title: "Gatsby + Bootstrap Italia",
-    description: "A starter kit for Gatsby + Bootstrap Italia"
+    title: 'Gatsby + Bootstrap Italia',
+    description: 'A starter kit for Gatsby + Bootstrap Italia',
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
       options: {
         disable: true,
       },
@@ -50,6 +50,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-jss`
+    `gatsby-plugin-jss`,
   ],
 };
