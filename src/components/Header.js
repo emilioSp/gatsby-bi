@@ -116,6 +116,9 @@ export const Header = () => {
                       <li className="nav-item">
                         <Link to="/optimized_image/" className="nav-link font-weight-semibold">Ottimizzazione immagini</Link>
                       </li>
+                      <li className="nav-item">
+                        <Link to="/json_data/" className="nav-link font-weight-semibold">Dati elaborati da formato json</Link>
+                      </li>
                     </ul>
                     <div className="it-socials d-flex text-nowrap ml-4 pt-4 d-lg-none"><span className="text-white">Seguici su</span>
                       <div className="ml-3">
