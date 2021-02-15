@@ -1,7 +1,15 @@
 import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
+import { createUseStyles } from 'react-jss';
+
+const useStyles = createUseStyles({
+  post: {
+    textTransform: 'uppercase'
+  }
+})
 
 export const Main = () => {
+  const classes = useStyles();
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark {
@@ -25,7 +33,7 @@ export const Main = () => {
       {
         frontMatter.filter(f => f.show_in_home).map(f => (
           <ul key={f.title}>
-            <Link to={f.path}>{f.title}</Link>
+            <Link to={f.path} className={classes.post}>{f.title}</Link>
           </ul>
         ))
       }

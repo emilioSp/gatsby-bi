@@ -1,8 +1,17 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import sprite from 'bootstrap-italia/dist/svg/sprite.svg';
+import { createUseStyles } from 'react-jss';
+
+const useStyles = createUseStyles({
+  logo: {
+    composes: 'icon',
+    maxHeight: '72px'
+  }
+})
 
 export const Header = () => {
+  const classes = useStyles();
   return (
 
     <header className="it-header-wrapper" data-datocms-noindex="" lang="it">
@@ -25,9 +34,8 @@ export const Header = () => {
               <div className="it-header-center-content-wrapper px-2 px-sm-0">
                 <div className="it-brand-wrapper pr-0 pr-md-5">
                   <Link to="/" className="nav-link font-weight-semibold">
-                    <img
-                      src="https://innovazione.gov.it/images/logo-repubblica-italiana-56a773ac.svg" alt="Logo Repubblica Italiana"
-                      style={{maxHeight: '72px'}} className="icon" />
+                    <img className={classes.logo}
+                      src="https://innovazione.gov.it/images/logo-repubblica-italiana-56a773ac.svg" alt="Logo Repubblica Italiana" />
                     <img src="https://innovazione.gov.it/images/logo-mid-white-6d6c98f9.svg"
                          alt="Logo Ministro Innovazione"
                          style={{width: '120px', maxHeight: '72px'}}
