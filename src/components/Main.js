@@ -29,7 +29,8 @@ export const Main = () => {
 
   const frontMatter = data.allMarkdownRemark.edges.map(n => n.node.frontmatter);
   return (
-    <div className="container pt-5">
+    <>
+      <ul>Notizie scritte in markdown</ul>
       {
         frontMatter.filter(f => f.show_in_home).map(f => (
           <ul key={f.title}>
@@ -37,6 +38,6 @@ export const Main = () => {
           </ul>
         ))
       }
-    </div>
+    </>
   )
 }

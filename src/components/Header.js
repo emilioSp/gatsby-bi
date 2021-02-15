@@ -109,6 +109,7 @@ export const Header = () => {
                                                                       style={{width: '120px', maxHeight: '32px'}}
                                                                       className=""/></a></div>
                     <ul className="navbar-nav">
+                      <li className="nav-item"><Link to="/" className="nav-link font-weight-semibold">Home</Link> </li>
                       <li className="nav-item"><Link to="/dashboard/" className="nav-link font-weight-semibold">Dashboard</Link> </li>
                       <li className="nav-item">
                         <Link to="/dipartimento/" className="nav-link font-weight-semibold">Dipartimento</Link>
