@@ -5203,10 +5203,10 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-config-emiliosp@^1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/eslint-config-emiliosp/-/eslint-config-emiliosp-1.0.10.tgz#fcea974de6829666897df05e88749482b7341466"
-  integrity sha512-WuhZjZaieEEfMi8Hu3s9CNEsMv+NX2Awsz4gzaiNqYl+u7AwIDKhkzHjO2j/yWZS/9Hv/VsyQ2o8vy/zPaf6rQ==
+eslint-config-emiliosp@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/eslint-config-emiliosp/-/eslint-config-emiliosp-1.0.11.tgz#386db9704bef327237a744d6a0d460fea2b006e8"
+  integrity sha512-Nwq+Ec/RoLpa1dOjOavIzO/5jDP/nmtzpntqY7f8OJ5+YfTuNroHeAdjUeOwjqNn0lLUeB7olJPkrcy7gQLopQ==
   dependencies:
     eslint "^7.19.0"
     eslint-config-prettier "^7.2.0"
