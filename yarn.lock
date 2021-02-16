@@ -5203,12 +5203,11 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-config-emiliosp@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/eslint-config-emiliosp/-/eslint-config-emiliosp-1.0.11.tgz#386db9704bef327237a744d6a0d460fea2b006e8"
-  integrity sha512-Nwq+Ec/RoLpa1dOjOavIzO/5jDP/nmtzpntqY7f8OJ5+YfTuNroHeAdjUeOwjqNn0lLUeB7olJPkrcy7gQLopQ==
+eslint-config-italia@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-italia/-/eslint-config-italia-1.0.2.tgz#d858f159a99bbc938c08fce40069256d7e31ae78"
+  integrity sha512-CM/PyNVOXlaO4BsihpKm4khF6ASIbfEPlHD+DE5n7LIQq1exWfH1ObCpV6jrr6/Tr5+lGu5f1zH5LT51i7PUNg==
   dependencies:
-    eslint "^7.19.0"
     eslint-config-prettier "^7.2.0"
     eslint-plugin-import "^2.22.1"
     eslint-plugin-prettier "^3.3.1"
@@ -5431,7 +5430,7 @@ eslint@^6.8.0:
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-eslint@^7.19.0, eslint@^7.20.0:
+eslint@^7.20.0:
   version "7.20.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.20.0.tgz#db07c4ca4eda2e2316e7aa57ac7fc91ec550bdc7"
   integrity sha512-qGi0CTcOGP2OtCQBgWZlQjcTuP0XkIpYFj25XtRTQSHC+umNnp7UMshr2G8SLsRFYDdAPFeHOsiteadmMH02Yw==
