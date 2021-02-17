@@ -19,7 +19,10 @@ export const Layout = ({ children }) => {
     <>
       <Helmet
         title={data.site.siteMetadata.title}
-        meta={[{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }]}
+        meta={[
+          { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+          { name: 'description', content: 'Gatsby plus Bootstrap Italia' },
+        ]}
       >
         <html lang="it" />
         <noscript>This site runs best with JavaScript enabled.</noscript>
