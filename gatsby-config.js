@@ -51,5 +51,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-jss`,
+    `gatsby-plugin-react-helmet`,
   ],
 };

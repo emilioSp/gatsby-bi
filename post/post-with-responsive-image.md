@@ -2,6 +2,8 @@
 path: "/blog/responsive-image"
 date: "2021-02-15"
 title: "Responsive image in markdown"
+subtitle: ""
+author: ""
 show_in_home: true
 ---
 
