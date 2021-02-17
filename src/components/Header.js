@@ -150,11 +150,7 @@ export const Header = () => {
                   className="custom-navbar-toggler"
                   data-target="#nav02"
                   type="button"
-                >
-                  <svg className="icon">
-                    <use xlinkHref="/images/sprite-641d5a28.svg#it-burger"></use>
-                  </svg>
-                </button>
+                ></button>
                 <div className="navbar-collapsable" id="nav02" style={{ display: 'none', zIndex: 2000 }}>
                   <div className="overlay" style={{ display: 'none' }}></div>
                   <div className="close-div sr-only">
@@ -216,64 +212,28 @@ export const Header = () => {
                             target="_blank"
                             rel="noreferrer"
                             aria-label="Twitter"
-                          >
-                            <svg
-                              aria-label="Vai a Twitter"
-                              className="icon icon-sm icon-white"
-                              focusable="false"
-                              role="img"
-                            >
-                              <use xlinkHref="/images/sprite-641d5a28.svg#it-twitter"></use>
-                            </svg>
-                          </a>
+                          ></a>
                           <a
                             href="https://www.linkedin.com/company/ministeroinnovazione/about/?viewAsMember=true"
                             className="d-block mr-3"
                             target="_blank"
                             rel="noreferrer"
                             aria-label="Linkedin"
-                          >
-                            <svg
-                              aria-label="Vai a Linkedin"
-                              className="icon icon-sm icon-white"
-                              focusable="false"
-                              role="img"
-                            >
-                              <use xlinkHref="/images/sprite-641d5a28.svg#it-linkedin"></use>
-                            </svg>
-                          </a>
+                          ></a>
                           <a
                             href="https://www.facebook.com/DipartimentoTrasformazioneDigitale/"
                             className="d-block mr-3"
                             target="_blank"
                             rel="noreferrer"
                             aria-label="facebook"
-                          >
-                            <svg
-                              aria-label="Vai a facebook"
-                              className="icon icon-sm icon-white"
-                              focusable="false"
-                              role="img"
-                            >
-                              <use xlinkHref="/images/sprite-641d5a28.svg#it-facebook"></use>
-                            </svg>
-                          </a>
+                          ></a>
                           <a
                             href="https://medium.com/blog-per-la-trasformazione-digitale"
                             className="d-block mr-3"
                             target="_blank"
                             rel="noreferrer"
                             aria-label="Medium"
-                          >
-                            <svg
-                              aria-label="Vai a Medium"
-                              className="icon icon-sm icon-white"
-                              focusable="false"
-                              role="img"
-                            >
-                              <use xlinkHref="/images/sprite-641d5a28.svg#it-medium"></use>
-                            </svg>
-                          </a>
+                          ></a>
                         </div>
                       </div>
                     </div>
