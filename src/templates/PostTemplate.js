@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import { DateTime } from 'luxon';
 import { createUseStyles } from 'react-jss';
-import { Layout } from '../components/Layout.js';
 import background from '../images/post-background.svg';
 
 const useStyle = createUseStyles({
@@ -51,7 +50,7 @@ export const PostTemplate = ({ data }) => {
   const { frontmatter, html } = markdownRemark;
   const date = DateTime.fromISO(frontmatter.date);
   return (
-    <Layout>
+    <>
       <div className={classes.title}>
         <h1>{frontmatter.title}</h1>
         <h4>{frontmatter.subtitle}</h4>
@@ -66,7 +65,7 @@ export const PostTemplate = ({ data }) => {
           <hr className="col-md-10 mb-5" />
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 

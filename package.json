@@ -25,7 +25,10 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-jss": "^10.5.1",
-    "recharts": "^2.0.6"
+    "recharts": "^2.0.6",
+    "typeface-lora": "^1.1.13",
+    "typeface-roboto-mono": "^1.1.13",
+    "typeface-titillium-web": "^1.1.13"
   },
   "devDependencies": {
     "eslint": "^7.20.0",
