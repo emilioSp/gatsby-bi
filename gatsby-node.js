@@ -1,7 +1,13 @@
 const path = require('path');
 const axios = require('axios');
 
-exports.createPages = async ({ actions: { createPage }, graphql }) => {
+exports.createPages = async ({ actions: { createPage, createRedirect }, graphql }) => {
+  createRedirect({
+    fromPath: '/pippo',
+    toPath: '/dipartimento/',
+    statusCode: 301,
+  });
+
   const result = await graphql(`
     {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {

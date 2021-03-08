@@ -52,5 +52,6 @@ module.exports = {
     },
     `gatsby-plugin-jss`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-meta-redirect`,
   ],
 };
