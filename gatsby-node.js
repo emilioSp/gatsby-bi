@@ -3,7 +3,7 @@ const axios = require('axios');
 
 exports.createPages = async ({ actions: { createPage, createRedirect }, graphql }) => {
   createRedirect({
-    fromPath: '/pippo',
+    fromPath: '/pippo/',
     toPath: '/dipartimento/',
     statusCode: 301,
   });
