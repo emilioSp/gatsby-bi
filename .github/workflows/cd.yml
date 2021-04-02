@@ -1,11 +1,9 @@
 name: CD
 
 on:
-  push:
-    branches:
-      - "!*"
-    tags:
-      - "v*"
+  release:
+    types: [published]
+
 # Test, questo deve essere eseguito solo su tag on main
 jobs:
   test:
