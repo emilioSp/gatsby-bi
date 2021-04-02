@@ -6,7 +6,6 @@ on:
       - "!*"
     tags:
       - "v*"
-# Test, questo deve essere eseguito solo su tag on main
 jobs:
   test:
     runs-on: ubuntu-latest
